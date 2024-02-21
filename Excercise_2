@@ -1,0 +1,25 @@
+my_list = [1,2,3,4]
+[print(value) for value in my_list]
+print([value*20 for value in my_list])
+[print(value*20) for value in my_list]
+new_list = ["Elie","Tim","Matt"]
+print([first_letter[0] for first_letter in new_list])
+my_list = [1,2,3,4,5,6]
+print([num for num in my_list if num % 2 == 0])
+first_list = [1,2,3,4]
+second_list = [3,4,5,6]
+vowels = [num for num in first_list if num in second_list]
+print(vowels)
+name = ["Elie", "Tim", "Matt"]
+print([word[::-1].lower() for word in name])
+str1 = "first"
+str2 = "third"
+print([char for char in str1 if char in str2])
+print([num for num in range(1,101) if num % 12 == 0])
+vowels = [letter for letter in 'amazing' if letter not in ['a','e','i','o','u']]
+print(vowels) 
+word = "amazing"
+vowels = 'aeiou'
+print([char for char in word if char.lower() not in vowels])
+print([[num for num in range(3)] for _ in range(3)])
+print([[num for num in range(10)] for _ in range(10)])
